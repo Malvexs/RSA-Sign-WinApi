@@ -2,7 +2,6 @@
 #include "crypt.h"
 #include "publickey.h" //public key file
 #include "privatekey.h"
-#include "file.h"
 #include <wincrypt.h>
 
 BOOL CryptValidSign(PBYTE msgunsign, DWORD msgunsignlengh, PBYTE msgsign, DWORD msgsignlengh){
