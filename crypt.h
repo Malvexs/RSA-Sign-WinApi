@@ -7,6 +7,5 @@
 
 BOOL CryptValidSign(PBYTE msgunsign, DWORD msgunsignlengh, PBYTE msgsign, DWORD msgsignlengh);
 BOOL CryptCreateSign(PBYTE msgunsign, DWORD msgunsignlengh, PBYTE msgsign, PDWORD msgsignlengh);
-BOOL CryptGenFileSign(LPCSTR file_name, COMMAND_HEADER cmd_h);
 
 #endif // RSA_SIGN_H_INCLUDED
