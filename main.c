@@ -13,9 +13,9 @@ int main(int argc, char *argv[]){
     if(!CryptCreateSign(Msgtosign, strlen(Msgtosign), Signmsg, &msgsignlengh)){
         printf("[-]erro na assinatura\n");
         return -1;
-    }else{
+    }else
         printf("[+]Msg assinada com sucesso\n");
-    }
+    
 
     printf("Mensagem Assinada :\n");
 
@@ -27,8 +27,8 @@ int main(int argc, char *argv[]){
     if(!CryptValidSign(Msgtosign, strlen(Msgtosign), Signmsg, msgsignlengh)){
         printf("[-]Assinatura invalida\n");
         return -1;
-    }else{
+    }else
         printf("[+]Assinatura valida\n");
-    }
+    
 
 }
