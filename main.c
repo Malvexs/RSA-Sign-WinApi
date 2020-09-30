@@ -10,7 +10,7 @@ int main(int argc, char *argv[]){
     unsigned char Signmsg[4098];
     DWORD msgsignlengh = sizeof(Signmsg);
 
-    if(!CryptCreateSign(Msgtosign, strlen(Msgtosign), Signmsg, &msgsignlengh)){
+    if(!CryptCreateSign(Msgtosign, strlen(Msgtosign), Signmsg, &msgsignlengh)){ //Criando assinatura e salvando no buffer "Signmsg"
         printf("[-]erro na assinatura\n");
         return -1;
     }else
@@ -24,7 +24,7 @@ int main(int argc, char *argv[]){
 
     printf("\nFim da assinatura\n");
 
-    if(!CryptValidSign(Msgtosign, strlen(Msgtosign), Signmsg, msgsignlengh)){
+    if(!CryptValidSign(Msgtosign, strlen(Msgtosign), Signmsg, msgsignlengh)){ //Verificando a assinatura
         printf("[-]Assinatura invalida\n");
         return -1;
     }else
