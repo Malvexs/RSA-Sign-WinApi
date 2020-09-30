@@ -115,8 +115,9 @@ static void ExportKeyToFile(HCRYPTKEY hkey, DWORD type, LPCSTR filename){
 
                 y++;
             }
-
+            
             printf("[+]Key exportada com sucesso: %s \n", filename);
+            free(rsakey);
         }else{
             callerror(filename);
         }
