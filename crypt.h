@@ -3,7 +3,6 @@
 
 #include <WinSock2.h>
 #include <windows.h>
-#include "commands.h"
 
 BOOL CryptValidSign(PBYTE msgunsign, DWORD msgunsignlengh, PBYTE msgsign, DWORD msgsignlengh);
 BOOL CryptCreateSign(PBYTE msgunsign, DWORD msgunsignlengh, PBYTE msgsign, PDWORD msgsignlengh);
