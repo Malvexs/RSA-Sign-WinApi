@@ -8,7 +8,7 @@ int main(int argc, char *argv[]){
 
     PCHAR Msgtosign = "Teste de assinatura";
     unsigned char Signmsg[4098];
-    DWORD msgsignlengh = sizeof(Signmsg);
+    DWORD msgsignlengh;
 
     if(!CryptCreateSign(Msgtosign, strlen(Msgtosign), Signmsg, &msgsignlengh)){ //Criando assinatura e salvando no buffer "Signmsg"
         printf("[-]erro na assinatura\n");
